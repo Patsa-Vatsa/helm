@@ -1,15 +1,16 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "jenkins-helm.fullname" . }}
-  labels:
-    {{- include "jenkins-helm.labels" . | nindent 4 }}
+  name: {{ .Values.name }}
+  namespace: {{ .Values.namespace }}
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
-      protocol: TCP
-      name: http
+    - name: master
+      port: {{ .Values.service.hport }}
+      targetPort: {{ .Values.service.hport }}
+    - name: slave
+      port: {{ .Values.service.jport }}
+      targetPort: {{ .Values.service.jport }}
   selector:
-    {{- include "jenkins-helm.selectorLabels" . | nindent 4 }}
+    app: {{ .Values.name }}

@@ -3,7 +3,7 @@ entries:
   first-app:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-09T13:09:46.843519692Z"
+    created: "2024-07-10T12:02:13.940359072Z"
     description: A Helm chart for Kubernetes
     digest: da0c7f6a1b546fc393cfccc9b3ef94a3acb1327c556bde25f54a144f498a8a5e
     name: first-app
@@ -11,15 +11,15 @@ entries:
     urls:
     - https://patsa-vatsa.github.io/helm/helm-releases/first-app-0.1.0.tgz
     version: 0.1.0
-  helm-jenkins:
+  jenkins:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-09T13:09:46.844444047Z"
+    created: "2024-07-10T12:02:13.940978398Z"
     description: A Helm chart for Kubernetes
-    digest: f3b1d3de3da2189faa6f47602fb7d1aa59b3ba83f12e88eb802c1958f73041c3
-    name: helm-jenkins
+    digest: 6b5eb714423531b05ef218563f038222ba9e351d39412d450b0c6a1c07a6736e
+    name: jenkins
     type: application
     urls:
-    - https://patsa-vatsa.github.io/helm/helm-releases/helm-jenkins-0.1.0.tgz
+    - https://patsa-vatsa.github.io/helm/helm-releases/jenkins-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-09T13:09:46.841985491Z"
+generated: "2024-07-10T12:02:13.939571393Z"
